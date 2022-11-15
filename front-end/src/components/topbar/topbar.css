@@ -1,0 +1,203 @@
+.topbarContainer {
+    height: 50px;
+    width: 100%;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .topbarLeft {
+    flex: 3;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: var(--text-white);
+    cursor: pointer;
+  }
+  
+  .topbarCenter {
+    flex: 5;
+  }
+  
+  .searchbar {
+    width: 100%;
+    height: 30px;
+    background-color: var(--text-white);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .searchbar svg{
+    padding: 0px 10px;
+  }
+
+  .searchbar input{
+    width: 90%;
+  }
+  
+  .searchIcon {
+    font-size: 20px !important;
+    margin-left: 10px;
+  }
+  
+  .searchInput {
+    border: none;
+    width: 70%;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+  }
+  
+  .topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-white);
+  }
+  
+  .topbarLink {
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+.topbarUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  .topbarIcons {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .topbarIconItem {
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .topbarIconBadge {
+    width: 15px;
+    height: 15px;
+    background-color: var(--background-red);
+    border-radius: 50%;
+    color: var(--text-white);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .topbar-user{
+    position: relative;
+  }
+
+  .topbar-user:hover .userHandle{
+    display: block;
+  }
+  
+  .topbarImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .userHandle{
+    display: none;
+    width: 186px;
+    background-color: white;
+    position: absolute;
+    top: 125%;
+    right: -10px;
+    padding: 10px 10px;
+    border-radius: 2px;
+    animation: fadeIn ease-in 0.3s;
+    z-index: 1;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    color: black;
+  }
+
+  .userHandle::before {
+    content: "";
+    border-width: 10px 15px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+}
+
+.user-info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 7px;
+  cursor: pointer;
+  border-bottom: 2px solid #ced0d4;
+}
+
+.user-info-link{
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.user-info:hover {
+  background-color: var(--background-hover);
+  border-radius: 10px;
+}
+
+.user-info-name{
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+
+.user-logout{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  padding: 7px 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.user-logout:hover {
+  background-color: var(--background-hover);
+  border-radius: 10px;
+}
+
+.user-logout-icon{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-right: 10px;
+}
+
+
+  @keyframes fadeIn{
+    from{
+     opacity: 0;
+    }
+    to{
+     opacity: 1;
+    }
+ }
+  
